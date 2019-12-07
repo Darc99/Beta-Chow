@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+}
+html{
+    background-color: white;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+.clearfix {zoom: 1;}
+.clearfix::after{
+    content: ',';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/* ----------------------------------------------- */
+/*REPEAT */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.box{
+    padding: 1%;
+}
+section{
+    padding: 80px 0;
+}
+/* ---------------------------------------------------*/
+/* HEADER */
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/Food/special/11ShrimpAndChickenPasta.jpg);
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    background-attachment: fixed;
+
+}
+.textbox{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.logo{
+    /* float: left;
+    height: 100px;
+    margin-top: 20px;
+    width: auto; */
+    /* color: #e67e22; */
+    color: #e03e59;/*--------1----------*/
+    font-family:cursive;
+    font-size: 70px;
+    float: left;
+    left: 2%;
+    position:absolute;
+    top: 3%;
+    z-index: 2;
+
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;  
+}
+.main-nav li a:link,.main-nav li a:visited{
+    color: white;
+    border-bottom: 2px solid transparent;
+    font-size: 90%;
+    padding: 8px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,.main-nav li a:active{
+    border-bottom: 2px solid #e03e59; /*--------1----------*/
+}
+
+/* ---------------------------------------------------*/
+/* FEATURES */
+.features .copy{
+    margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------*/
+/* HEADINGS */
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h1{ 
+    color: white;
+    font-size: 240%;
+    letter-spacing: 1px;
+    margin-top: 0%;
+    margin-bottom: 20px;
+    word-spacing: 4px;
+}
+h2{
+    font-size: 180%;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+    word-spacing: 2px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+h2::after{
+    background-color:#e03e59;/*--------1----------*/
+    content: " ";
+    display: block;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100px;
+}
+/*------------------------------------------------------*/
+/* PARAGRAPH */
+.copy{
+    line-height: 145%;
+    margin-left: 15%;
+    width: 70%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+/* ---------------------------------------------------*/
+/* ICONS */
+.icon-big{ 
+    /* color: #e67e22; */
+    color: #e03e59;/*--------1----------*/
+    display: block;
+    font-size: 350%;
+    margin-bottom: 10px;
+}
+.icon-small{
+    color: #e03e59;
+    display: inline-block;
+    font-size: 120%;
+    line-height: 120%;
+    margin-right: 10px;
+    margin-top: -3px;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+}
+/* ---------------------------------------------------*/
+/* LINKS */
+a:link,
+a:visited{
+    border-bottom: 1px solid #e03e59;
+    color: #e03e59;
+    padding-bottom: 1px;
+    text-decoration: none;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,
+a:active{
+    border-bottom: 1px soild transparent;
+    color: #555;
+    
+}
+/* ---------------------------------------------------*/
+/* BUTTONS */
+.btn:link,.btn:visited{
+    border-radius: 200px;
+    display: inline-block;
+    font-weight: 300;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+
+.btn-full:link,.btn-full:visited{
+    /* background-color: #e67e22; */
+    /* border: 1px solid  #e67e22; */
+    background-color: #e03e59;/*--------1----------*/
+    border: 1px solid #e03e59; /*--------1----------*/
+    color: white;
+    margin-right: 15px;
+}
+.btn-ghost:link,.btn-ghost:visited{
+    /* border: 1px solid  #e67e22;
+    color:#e67e22; */
+    border: 1px solid #e03d59;/*--------1----------*/
+    color: khaki;
+}
+.btn:hover,.btn:active{
+    /* background-color: #cf6d17; */
+    background-color: #d65e72;/*--------2----------*/
+}
+.btn-full:hover,.btn-full:active{
+    /* background-color: #cf6d17; */
+    background-color: #d65e72;/*--------2----------*/
+}
+.btn-ghost:hover,.btn-ghost:active{
+    /* border: 1px solid #cf6d17; */
+    border: 1px solid #d65e72;/*--------2----------*/
+    color:white;
+}
+/* ---------------------------------------------------*/
+/* MEALS */
+.meals{
+    padding: 0%;
+}
+.showcase-meal{
+    list-style: none;
+    width: 100%;
+}
+.showcase-meal li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-pic{
+    background-color: black; 
+    margin: 0%;
+    overflow: hidden;
+    width: 100%;      
+}
+.meal-pic img{
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    width: 100%;  
+}
+.meal-pic img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+/* ---------------------------------------------------*/
+/* HOW IT WORKS */
+.steps{
+    background-color: #e2d7d7;
+}
+.steps-box:first-child{
+    margin-top: 30px;
+    padding-right: 3%;
+    text-align: right;
+}
+.steps-box:last-child{
+    margin-top: 70px;
+    padding-left: 3%;
+    
+}
+.app-screen{
+    width: 40%;
+}
+.works-steps{
+    margin-bottom: 50px;
+}
+.works-steps:last-of-type{
+    margin-bottom: 80px;
+}
+.works-steps div{
+    color: #e03e59;
+    border: 2px solid #e03e59;
+    border-radius: 50%;                     
+    display: inline-block;
+    float: left;
+    font-size: 150%;
+    height: 55px;
+    margin-right: 25px;    
+    padding: 5px;
+    text-align: center;
+    width: 55px;
+}
+.btn-app:link,.btn-app:visited{
+    border: 0;
+}
+.btn-app img{
+    height: 50px;
+    margin-right: 10px; 
+    width: auto;
+}
+/* ---------------------------------------------------*/
+/* CITIES */
+.box img{
+    height: auto;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.city-feat{
+    margin-bottom: 5px;
+}
+
+
+/* ----------------------------------------------- */
+/*TESTIMONIAL*/
+
+.testi{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/back-customers.jpg);
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+cite img{
+    height:50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
