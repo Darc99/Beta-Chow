@@ -271,7 +271,7 @@ a:active{
     border: 2px solid #e03e59;
     border-radius: 50%;                     
     display: inline-block;
-    float: left;
+    /* float: left; */
     font-size: 150%;
     height: 55px;
     margin-right: 25px;    
@@ -335,3 +335,56 @@ cite img{
     margin-right: 10px;
     vertical-align: middle;
 }
+
+/* ----------------------------------------------- */
+/*PLANS*/
+.plans{
+    background-color: #e2d7d7;
+}
+.plan-box{
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+ 
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border: 0;
+}
+
+.price-plan{
+    color: #e03e59;
+    font-size:300% ;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.price-plan span{
+    font-size:30%;
+    font-weight: 300;
+}
+
+.price-plan-meal{
+    font-size: 80%;
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+
+
